@@ -129,8 +129,6 @@ img {
 }
 
 .icons-contacts {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
   fill: var(--text-color);
 }
@@ -233,16 +231,14 @@ img {
   margin-right: 0;
 }
 
-.features-items .icons-features {
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
 .icons-features {
-  width: 70px;
-  height: 70px;
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .hide {
@@ -357,8 +353,6 @@ img {
 .icons {
   display: flex;
   fill: var(--icon-color);
-  width: 20px;
-  height: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -395,8 +389,6 @@ img {
 }
 
 .icons-partners {
-  width: 106px;
-  height: 60px;
   fill: var(--icon-color);
 }
 
@@ -408,6 +400,10 @@ img {
 /*footer*/
 .footer {
   background-color: var(--bacbackground-color-dark);
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer .logo {
@@ -452,13 +448,34 @@ img {
 
 .our-icons {
   display: flex;
-  flex-wrap: column;
-  margin-top: 72px;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-left: 70px;
 }
 
-.footer-title {
+.our-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.our-icons .title {
   color: var(--white-color);
-  padding-bottom: 20px;
+  width: 145px;
+  height: 16px;
+  left: 516px;
+  top: 2751px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.footer-icons {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ft-icons {
+  fill: var(--white-color);
 }
 
 /*portfolio*/
@@ -482,6 +499,7 @@ img {
 .btn-filret:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .filter {
@@ -515,6 +533,11 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.project .project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project .project-item:nth-child(3n) {
